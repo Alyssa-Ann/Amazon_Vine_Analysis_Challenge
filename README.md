@@ -1,4 +1,18 @@
-# Amazon_Vine_Analysis_Challenge
+# Amazon Analysis
+
+## Overview of Project
+
+1. Define big data and describe the challenges associated with it. 
+2. Define Hadoop and name the main elements of its ecosystem.
+3. Explain how MapReduce processes data.
+4. Define Spark and explain how it processes data.
+5. Describe how NLP collects and analyzes text data.
+6. Explain how to use AWS Simple Storage Service (S3) and relational databases for basic cloud storage.
+7. Compete an analysis of an Amazon customer review.  
+
+Software: PySpark, AWS (Amazon Web Services), pgAdmin
+
+## Purpose
 
 Analyze Amazon reviews of toys for an interested client using PySpark to extract the data, transform it, and load the data into pgAdmin. Then analyze the data to determine if there is any bias towards favorable reviews from Vine members. Amazon Vine members recieve products from companies and then are required to publish reviews. Customers who purchase items and can then choose to write testimonials based on their experiences on their own volition. This excersise will determine if the number of 5-star reviews is impacted by paid reviews from Vine members. For this trial, the reviews for toys are being tested for bias.   
 
