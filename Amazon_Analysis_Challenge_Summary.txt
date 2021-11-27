@@ -1,0 +1,55 @@
+# Amazon Analysis
+
+## Overview of Project
+
+1. Define big data and describe the challenges associated with it. 
+2. Define Hadoop and name the main elements of its ecosystem.
+3. Explain how MapReduce processes data.
+4. Define Spark and explain how it processes data.
+5. Describe how NLP collects and analyzes text data.
+6. Explain how to use AWS Simple Storage Service (S3) and relational databases for basic cloud storage.
+7. Compete an analysis of an Amazon customer review.  
+
+Software: PySpark, AWS (Amazon Web Services), pgAdmin
+
+## Purpose
+
+Analyze Amazon reviews of toys for an interested client using PySpark to extract the data, transform it, and load the data into pgAdmin. Then analyze the data to determine if there is any bias towards favorable reviews from Vine members. Amazon Vine members recieve products from companies and then are required to publish reviews. Customers who purchase items and can then choose to write testimonials based on their experiences on their own volition. This excersise will determine if the number of 5-star reviews is impacted by paid reviews from Vine members. For this trial, the reviews for toys are being tested for bias.   
+
+## Pre-Analysis Work
+Before the reviews could be analyzed for bias, the data from Amazon had to be extracted and transformed. To do so, the data was formed into a dataframe which was then used to extract tables of extracted data that were then queried in PGAdmin. Below are examples of the data from deliverable 1 being extracted, transformed, and loaded in PGAdmin.
+
+### Dataframe Creation
+!!!!!!!!!!!!!!!!!!!deliv one dataframe
+
+### Tables being Transformed
+!!!!!!!!!!!!!! tables created 1-4
+
+### Data being Loaded
+!!!!!!!!!!!!!!! pg amin tables
+
+## Results
+
+The data was parsed down to limit the pool of reviews that were being checked for bias. First, the data was analyzed to figure out how many reviews had 20 or more votes on whether is was helpful or not. While this is a good way to sort the data, it does not really tell us the type of bias. Next the reviews were sorted down to only those where 50% of people reading the reviews or more said if the review was helpful. 
+
+!!!!deliv 2 dataframe and 20 image
+
+### Vine Reviews vs Non-Vine Reviews (50% or more said helpful) 
+
+In total, 63294 reviews had 50% or more people say it was helpful. Of those reviews, 1266 were paid vine reviews. The other 62028 were unpaid reviews. 
+--dataframe pics
+
+### 5-Star Reviews Totals
+
+To further look into bias, the reviews were then parsed down to the total number of 5-star reviews which was 30414 reviews in total. Of these 5-star reviews, 432 were paid vine reviews and 29982 were unpaid reviews. 
+
+
+### Breakdown of 5-Start Reviews 
+
+When looking into the breakdown of paid vs unpaid 5 star reviews, only 1.42% of the 5-star reviews were paid vine reviews. The majority of reviews, alomst 99% were unpaid. 
+
+## Summary
+
+I do not believe there is any bias for reviews in the Vine program based on the toy reviews analyzed. Almost 99% of 5-star reviews are unpaid and unsponsored. This is a very strong case that the toys are excellent, and people just want to write positive reviews on that. Of course, in terms of Big Data, about 30,000 5-star reviews is a relatively small data set. The sample size is too constricted to accurately compare paid vs unpaid reviews. Not only that, but limiting the type of product will limit the audience who is doing the reviews. If one were to look into beauty products, they may see much more bias based upon free samples given by companies, for example. There is always the chance of coincidence, but the more datasets that are analyzed, the more positive the bias could be. 
+ 
+
