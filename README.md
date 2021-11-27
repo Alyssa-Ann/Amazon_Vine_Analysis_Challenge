@@ -17,7 +17,8 @@ Before the reviews could be analyzed for bias, the data from Amazon had to be ex
 ![Deliverable_1_Review_table](https://user-images.githubusercontent.com/88064181/143669888-b8f98abb-73ec-4109-9528-f010124ebc94.png)
 
 ### Data being Loaded
-[Deliverable_1_PgAdmin_tables](https://user-images.githubusercontent.com/88064181/143669896-1991a487-e75d-463f-9a32-cd72b960c064.png)
+
+![Deliverable_1_PgAdmin_tables](https://user-images.githubusercontent.com/88064181/143669958-44715f7b-59e0-4d19-a18c-04e5c58ecfc4.png)
 
 
 ## Results
